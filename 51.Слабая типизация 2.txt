@@ -1,0 +1,13 @@
+Задание
+Напишите функцию isFalsy(), которая проверяет, трактуется ли переданное значение как ложное с точки зрения PHP. Для выполнения этой проверки вам понадобится сравнить false с переданным значением, используя ==.
+
+<?php
+
+namespace HexletBasics\Logic\WeakTyping;
+ 
+
+function isFalsy($example)
+{
+return $example == false;
+}
+

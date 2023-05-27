@@ -1,0 +1,16 @@
+Задание
+Напишите функцию isMister(), которая принимает строку и проверяет, является ли она словом 'Mister'.
+
+<?php
+
+namespace HexletBasics\Logic\Predicates;
+
+
+function isMister($string)
+{
+    return $string == 'Mister';
+}
+var_dump(isMister('Mister')); //bool(true)
+var_dump(isMister('Women')); //bool(false)
+
+

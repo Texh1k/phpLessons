@@ -1,0 +1,16 @@
+Реализуйте функцию guessNumber(), которая принимает число и проверяет, равно ли число заданному (пусть это будет 42). Если равно, то функция должна вернуть строку 'You win!', в противном случае нужно вернуть строку 'Try again!'.
+
+<?php
+
+namespace HexletBasics\Conditionals\IfStatement;
+
+
+function  guessNumber($number)
+{
+    if ($number === 42){
+        return 'You win!';
+    }
+    return 'Try again!';
+}
+print_r(guessNumber(52));
+print_r(guessNumber(42));

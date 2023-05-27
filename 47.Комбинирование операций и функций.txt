@@ -1,0 +1,14 @@
+Задание
+Реализуйте функцию isInternationalPhone(), которая проверяет формат указанного телефона. Если телефон начинается с +, значит это международный формат.
+
+<?php
+
+namespace HexletBasics\Logic\CombineExpressions;
+
+
+function isInternationalPhone($phoneNumber)
+{
+    return $phoneNumber[0] === '+';
+}
+var_dump(isInternationalPhone('+79121234567')); //bool(true)
+var_dump(isInternationalPhone('89121234567')); //bool(false)

@@ -1,0 +1,23 @@
+Напишите функцию isPensioner(), которая принимает возраст в качестве единственного аргумента и проверяет, является ли этот возраст пенсионным. Пенсионным считается возраст 60 лет и больше.
+
+Примеры вызова:
+
+<?php
+
+isPensioner(75); // true
+isPensioner(18); // false
+_______________________________________
+
+<?php
+
+namespace HexletBasics\Logic\BoolType;
+
+
+function isPensioner($age)
+{
+    return $age >= 60;
+}
+
+var_dump(isPensioner(50)); //bool(false)
+var_dump(isPensioner(73)); //bool(true)
+

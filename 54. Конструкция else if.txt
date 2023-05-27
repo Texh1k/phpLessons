@@ -1,0 +1,29 @@
+На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зеленым кружком, враги — красным, а нейтральные семьи — серым.
+
+Напишите для Сэма функцию whoIsThisHouseToStarks(), которая принимает на вход фамилию семьи и возвращает одно из трех значений: 'friend', 'enemy', 'neutral'.
+
+Правила определения:
+
+Друзья ('friend'): 'Karstark', 'Tully'
+Враги ('enemy'): 'Lannister', 'Frey'
+Любые другие семьи считаются нейтральными
+
+
+<?php
+
+namespace HexletBasics\Conditionals\ElseIfStatement;
+
+
+function whoIsThisHouseToStarks($familyName)
+{
+    if ($familyName === 'Karstark' || $familyName === 'Tully')
+{return "friend";}
+
+    elseif ($familyName === 'Lannister' || $familyName === 'Frey')
+{return "enemy";}
+
+    return 'neutral';
+}
+print_r(whoIsThisHouseToStarks('Karstark'));
+
+

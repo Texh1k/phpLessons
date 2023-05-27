@@ -1,0 +1,16 @@
+Задание
+Напишите функцию isNeutralSoldier(), которая принимает на вход два аргумента:
+
+Цвет доспехов (строка). Возможные варианты: red, yellow, black.
+Цвет щита (строка). Возможные варианты: red, yellow, black.
+Функция возвращает true если цвет доспехов не красный и цвет щита чёрный. В остальных случаях возвращает false.
+
+<?php
+
+namespace HexletBasics\Logic\LogicalOperators2;
+
+function isNeutralSoldier($armorColor, $shieldColor)
+{
+   return ($armorColor !== 'red' && $shieldColor === 'black');
+}
+
