@@ -1,0 +1,7 @@
+Реализуйте функцию flipFlop(), которая принимает на вход строку и, если эта строка равна 'flip', возвращает строку 'flop'. В противном случае функция должна вернуть 'flip'.
+
+function flipFlop($isItFlip) {
+    
+   return $isItFlip === 'flip' ? 'flop' : 'flip' ;
+}
+print_r(flipFlop('flip'));
