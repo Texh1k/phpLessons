@@ -1,0 +1,23 @@
+Задание
+Реализуйте функцию multiplyNumbersFromRange(), которая перемножает числа в указанном диапазоне включая границы диапазона.
+
+function multiplyNumbersFromRange ($start, $finish)
+  {
+      
+      $i = $start;
+      $sum = 1; 
+
+      while ($i <= $finish) { 
+          $sum = $sum * $i; 
+          $i = $i + 1; 
+      }
+
+      // Возвращаем получившийся результат
+      return $sum;
+  };
+	
+
+
+	print_r(multiplyNumbersFromRange(1, 5)); // Вывод: 120 -проверка пройдена
+	print_r("\n");
+	print_r(multiplyNumbersFromRange(2, 3)); // Вывод: 6 -проверка пройдена
