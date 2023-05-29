@@ -1,0 +1,23 @@
+Задание
+Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку:
+
+<?php
+
+
+
+<?php
+
+namespace HexletBasics\Loops\AgregationString;
+
+
+function joinNumbersFromRange($firstNumber, $secondNumber)
+{
+    $result = '';
+    $i = $firstNumber;
+    
+    while ($i <= $secondNumber) {
+        $result = "{$result}{$i}";
+        $i = $i + 1;
+    }
+    return $result;
+}
