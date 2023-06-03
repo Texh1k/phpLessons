@@ -1,0 +1,31 @@
+Задание
+Реализуйте функцию-предикат isArgumentsForSubstrCorrect, которая принимает три аргумента:
+
+строку
+индекс, с которого начинать извлечение
+длину извлекаемой подстроки
+Функция возвращает false, если хотя бы одно из условий истинно:
+
+Отрицательная длина извлекаемой подстроки
+Отрицательный заданный индекс
+Заданный индекс выходит за границу всей строки
+Длина подстроки в сумме с заданным индексом выходит за границу всей строки
+В ином случае функция возвращает true.
+
+
+<?php
+
+namespace HexletBasics\Loops\EdgeCases;
+
+
+function isArgumentsForSubstrCorrect ($string, $i, $length)
+{
+   $strLength = strlen($string);
+   
+   if ($i < 0) {return false;}
+   elseif ($i < 0) {return false;}
+   elseif ($strLength <= $i) {return false;}
+   elseif ($strLength < $i + $length) {return false;}
+    return true;
+}
+
