@@ -1,0 +1,21 @@
+Реализуйте функцию hasChar(), которая проверяет, содержит ли строка букву в указанном регистре. Функция принимает два параметра:
+
+Строка
+Буква для поиска
+
+
+function hasChar($string, $letter)
+{
+    $length = strlen($string);
+    $i = 0;
+    while ($i < $length) {
+        $currentChar = $string[$i];
+        if ($currentChar === $letter) {
+            return true;
+        }
+
+        $i++;
+    }
+
+    return false;
+}
