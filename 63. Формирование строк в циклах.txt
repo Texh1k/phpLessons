@@ -1,0 +1,20 @@
+Задание
+Реализуйте функцию mysubstr(), которая извлекает из строки подстроку указанной длины. Она принимает на вход два аргумента (строку и длину) и возвращает подстроку начиная с первого символа:
+
+
+<?php
+
+namespace HexletBasics\Loops\ReverseString;
+
+function mysubstr($string, $length)
+{
+    $i = 0;
+    $result = '';
+    while ($i < $length) {
+        $currentChar = $string[$i];
+        $result = $result . $currentChar;
+        $i = $i + 1;
+    }
+    return $result;
+}
+
