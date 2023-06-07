@@ -1,0 +1,13 @@
+Задание
+Допишите реализацию функции getCustomDate(), которая возвращает дату в формате 15/03/1985 на основе переданного timestamp.
+
+<?php
+
+namespace HexletBasics\Dates\DateFunction;
+
+function getCustomDate($timestamp)
+{
+    
+    return date('d/m/Y' , $timestamp);
+   
+}
