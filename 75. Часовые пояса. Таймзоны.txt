@@ -1,0 +1,6 @@
+Задание
+Выведите на экран текущий часовой пояс.
+
+<?php
+
+print_r(date_default_timezone_get());
