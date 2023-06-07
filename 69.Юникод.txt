@@ -1,0 +1,27 @@
+Задание
+Допишите реализацию функции invertCase(), которая инвертирует регистр каждого символа в переданной строке.
+
+
+
+<?php
+
+namespace HexletBasics\DeepIntoStrings\Unicode;
+
+function invertCase($text)
+{
+    // BEGIN (write your solution here)
+    $length = mb_strlen($text);
+    $result = '';
+    for ($i = 0; $i < $length; $i++) {
+        $upLetter = mb_substr($text, $i, 1);
+        $lowLetter = mb_strtolower($upLetter);
+        if ($upLetter === $lowLetter) {
+            $result = $result . mb_strtoupper($upLetter);
+        } else {
+            $result = "{$result}{$lowLetter}";
+        }
+    }
+
+    return $result;
+    // END
+}
