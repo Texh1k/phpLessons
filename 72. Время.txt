@@ -1,0 +1,15 @@
+Задание
+Допишите реализацию функции getYear(), которая возвращает год переданного timestamp:
+
+
+<?php
+
+
+
+const SECONDS_IN_YEAR = 60 * 60 * 24 * 365;
+
+function getYear($timestamp)
+{
+    // BEGIN (write your solution here)
+   return 1970 + (int) floor($timestamp / SECONDS_IN_YEAR);
+}
